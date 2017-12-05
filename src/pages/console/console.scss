@@ -1,0 +1,27 @@
+page-console {
+
+}
+
+.inputText {
+  // width:60%;
+}
+.item-input>span {
+  width:auto;
+}
+
+div::-webkit-scrollbar {
+  border:none;
+  width:0;
+  background: rgba(0,0,0,0);
+}
+div::-webkit-scrollbar-track {
+  border:none;
+  width:0;
+  background: rgba(0,0,0,0);
+}
+div::-webkit-scrollbar-thumb {
+  border:none;
+  width:0;
+  background: rgba(0,0,0,0);
+}
+// https://stackoverflow.com/questions/42138740/ionic-2-hide-scroll-bar-and-keep-scrolling

@@ -1,0 +1,63 @@
+<ion-menu [content]="content">
+
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Pages</ion-title>
+    </ion-toolbar>
+
+  </ion-header>
+
+  <ion-content>
+    <ion-list>
+      <button ion-item *ngFor="let p of pages" (click)="openPage(p)">
+        {{p.title}}
+      </button>
+    </ion-list>
+  </ion-content>
+
+</ion-menu>
+
+<ion-header no-padding no-margin>
+  <ion-toolbar no-padding no-margin>
+    <ion-grid no-padding no-margin>
+      <ion-row nowrap no-padding no-margin>
+        <ion-col class="navbar_col" *ngFor="let p of pages"
+        no-padding no-margin>
+
+          <button ion-button
+          outline
+          class="navbar_button"
+          no-padding no-margin
+          color="dark"
+          size="small"
+          (click)="openPage(p)"
+
+          >
+            {{p.title}}
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
+</ion-content>
+
+<ion-footer>
+  <!-- <ion-toolbar right>
+
+    <button ion-buttons
+    clear small round color="light"
+    ion-item *ngFor="let p of pages"
+    (click)="openPage(p)"
+    >
+      {{p.title}}
+    </button>
+
+  </ion-toolbar> -->
+
+
+
+</ion-footer>
