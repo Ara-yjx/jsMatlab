@@ -11,6 +11,7 @@ import { ConsolePage } from '../pages/console/console';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { VariablesPage } from '../pages/variables/variables';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HelloIonicPage,
     ItemDetailsPage,
     ListPage,
-    ConsolePage
+    ConsolePage,
+    VariablesPage
   ],
   imports: [
     BrowserModule,
@@ -30,7 +32,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HelloIonicPage,
     ItemDetailsPage,
     ListPage,
-    ConsolePage
+    ConsolePage,
+    VariablesPage
   ],
   providers: [
     StatusBar,

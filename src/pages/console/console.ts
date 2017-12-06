@@ -29,9 +29,14 @@ export class ConsolePage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ConsolePage');
-    setTimeout(() => {
-      this.content.scrollToBottom(300);
-    }, 1000);
+    // setTimeout(() => {
+    //   if(this.content) this.content.scrollToBottom(300);
+    // }, 1000);
+    if(this.content) {
+      this.dim = this.content.getContentDimensions();
+      this.content.scrollTo(0, this.dim.scrollHeight, 300);
+    };
+    
   }
 
 
@@ -47,8 +52,10 @@ export class ConsolePage {
     this.outputText.push(this.inputText);
     this.inputText = "";
 
-    this.dim = this.content.getContentDimensions();
-    this.content.scrollTo(0, this.dim.scrollHeight, 400);
+    if(this.content) {
+      this.dim = this.content.getContentDimensions();
+      this.content.scrollTo(0, this.dim.scrollHeight, 300);
+    };
     // Harah: using scrollTo(.., scrollHeight, ..) is better then scroolToBottom
     // because the latter does not always scroll to the very end
   }
@@ -56,8 +63,10 @@ export class ConsolePage {
   clearcmd(fab) {
     fab.close();
     this.outputText = [];
-    this.dim = this.content.getContentDimensions();
-    this.content.scrollTo(0, this.dim.scrollHeight, 400);
+    if(this.content) {
+      this.dim = this.content.getContentDimensions();
+      this.content.scrollTo(0, this.dim.scrollHeight, 300);
+    };
   }
 
 }
