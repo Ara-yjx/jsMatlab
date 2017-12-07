@@ -7,6 +7,8 @@ import { ListPage } from '../pages/list/list';
 
 import { ConsolePage } from '../pages/console/console';
 import { VariablesPage } from '../pages/variables/variables';
+import { MatrixPage } from '../pages/matrix/matrix';
+
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';

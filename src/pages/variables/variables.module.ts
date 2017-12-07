@@ -10,6 +10,7 @@ import { MatrixPage } from '../matrix/matrix';
   ],
   imports: [
     IonicPageModule.forChild(VariablesPage),
+    IonicPageModule.forChild(MatrixPage),    
   ],
 })
 export class VariablesPageModule {}

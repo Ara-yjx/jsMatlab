@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { MatrixPage } from '../matrix/matrix';
-import { PetryMatrix } from '../../assets/js/petrymatrix';
-// import interact = require('interactjs');
+// import { PetryMatrix } from '../../assets/js/petrymatrix';
+
+// import interact = require('../../assets/js/interact.js');
+
 /**
  * Generated class for the VariablesPage page.
  *
@@ -19,8 +21,7 @@ export class VariablesPage {
 
   constructor(
     public navCtrl: NavController, 
-    public navParams: NavParams,
-    public pm: PetryMatrix
+    public navParams: NavParams
   ) {
     
   }
@@ -28,10 +29,8 @@ export class VariablesPage {
 
 
   ionViewDidLoad() {
-    
-    console.log(this.pm);
-    console.log('ionViewDidLoad VariablesPage');
-  }
 
-  
+    
+
+  }
 }
