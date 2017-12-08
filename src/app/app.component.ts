@@ -3,7 +3,6 @@ import { Component, ViewChild } from '@angular/core';
 import { Platform, MenuController, Nav } from 'ionic-angular';
 
 import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
-// import { ListPage } from '../pages/list/list';
 
 import { ConsolePage } from '../pages/console/console';
 import { VariablesPage } from '../pages/variables/variables';
@@ -36,7 +35,6 @@ export class MyApp {
     this.pages = [
       { title: 'Variables', component: VariablesPage },
       { title: 'Hello', component: HelloIonicPage },
-      // { title: 'My First List', component: ListPage },
       { title: 'Console', component: ConsolePage }
     ];
   }

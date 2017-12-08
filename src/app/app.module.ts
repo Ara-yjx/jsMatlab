@@ -19,7 +19,6 @@ import { VariablesPage } from '../pages/variables/variables';
     MyApp,
     HelloIonicPage,
     ItemDetailsPage,
-    // ListPage,
     ConsolePage,
     VariablesPage
   ],
@@ -33,7 +32,6 @@ import { VariablesPage } from '../pages/variables/variables';
     MyApp,
     HelloIonicPage,
     ItemDetailsPage,
-    // ListPage,
     ConsolePage,
     VariablesPage
   ],
