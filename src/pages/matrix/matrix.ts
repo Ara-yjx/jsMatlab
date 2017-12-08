@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { MatrixPage } from '../../pages/matrix/matrix'
 /**
  * Generated class for the MatrixPage page.
  *
