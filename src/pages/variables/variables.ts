@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 // import { MatrixPage } from '../matrix/matrix';
 // import { PetryMatrix } from '../../assets/js/petrymatrix';
-
+import math = require('mathjs');
 
 /**
  * Generated class for the VariablesPage page.

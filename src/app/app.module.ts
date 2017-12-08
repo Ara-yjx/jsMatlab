@@ -5,9 +5,10 @@ import { MyApp } from './app.component';
 
 import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
 import { ItemDetailsPage } from '../pages/item-details/item-details';
-import { ListPage } from '../pages/list/list';
+// import { ListPage } from '../pages/list/list';
 
 import { ConsolePage } from '../pages/console/console';
+import { IonicStorageModule } from '@ionic/storage';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -18,20 +19,21 @@ import { VariablesPage } from '../pages/variables/variables';
     MyApp,
     HelloIonicPage,
     ItemDetailsPage,
-    ListPage,
+    // ListPage,
     ConsolePage,
     VariablesPage
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
+    IonicStorageModule.forRoot()
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
     HelloIonicPage,
     ItemDetailsPage,
-    ListPage,
+    // ListPage,
     ConsolePage,
     VariablesPage
   ],
@@ -41,4 +43,11 @@ import { VariablesPage } from '../pages/variables/variables';
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
-export class AppModule {}
+export class AppModule {
+  allVars = [];
+
+
+
+
+
+}
