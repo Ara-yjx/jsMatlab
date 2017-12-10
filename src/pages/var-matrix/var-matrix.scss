@@ -1,0 +1,68 @@
+page-var-matrix {
+
+}
+
+
+.inputRow {
+  display: flex;
+  flex-direction: row;
+  
+  // width: 1000px;  
+  // height: 100px;
+  background-color: grey;
+}
+
+
+.inputCol {
+  display: flex;
+  // width: 100px;
+  // height: 100px;  
+  background-color: grey;  
+}
+
+.inputWrapper {
+  width: 90px;
+  height: 50px; 
+  background-color: white;
+  // margin-top: 5px;
+  // margin-left: 5px
+  margin: 1px;
+}
+
+ion-scroll {
+  width: 100%;
+  height: 100%;
+}
+
+ion-toolbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+ion-item {
+  background-color: transparent !important; 
+}
+
+// ion-input {
+//   height: 100%;
+// }
+
+// .NameInput {
+//   width:50%;
+// }
+div::-webkit-scrollbar {
+  border:none;
+  width:0;
+  background: rgba(0,0,0,0);
+}
+div::-webkit-scrollbar-track {
+  border:none;
+  width:0;
+  background: rgba(0,0,0,0);
+}
+div::-webkit-scrollbar-thumb {
+  border:none;
+  width:0;
+  background: rgba(0,0,0,0);
+}

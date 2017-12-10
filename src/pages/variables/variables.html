@@ -15,6 +15,11 @@
 
 
 <ion-content padding>
+  <ion-fab top right #fab>
+    <button ion-fab color="primary" (click)="clickCreateMatrix()">
+      <ion-icon name="add"></ion-icon>
+    </button>
+  </ion-fab>
   <p>RUA!!!</p>
-
+  <p>{{this.varManage.allVariables}}</p>
 </ion-content>

@@ -13,6 +13,8 @@ import { IonicStorageModule } from '@ionic/storage';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { VariablesPage } from '../pages/variables/variables';
+import { VariablesManagementProvider } from '../providers/variables-management/variables-management';
+import { VarMatrixPage } from '../pages/var-matrix/var-matrix';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,8 @@ import { VariablesPage } from '../pages/variables/variables';
     HelloIonicPage,
     ItemDetailsPage,
     ConsolePage,
-    VariablesPage
+    VariablesPage,
+    VarMatrixPage,
   ],
   imports: [
     BrowserModule,
@@ -33,19 +36,16 @@ import { VariablesPage } from '../pages/variables/variables';
     HelloIonicPage,
     ItemDetailsPage,
     ConsolePage,
-    VariablesPage
+    VariablesPage,
+    VarMatrixPage,    
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    VariablesManagementProvider
   ]
 })
 export class AppModule {
-  allVars = [];
-
-
-
-
 
 }

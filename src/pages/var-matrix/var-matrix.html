@@ -1,0 +1,55 @@
+<!--
+  Generated template for the MatrixPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-header>
+  <ion-toolbar no-wrap>
+    <ion-grid no-padding no-margin>
+      <ion-row nowrap justify-content-end>
+
+        <ion-col>
+            
+          <ion-item col-8 no-padding no-margin>
+            <!-- <div> -->
+              <ion-label no-padding no-margin>matrix name:</ion-label>
+                
+              <ion-input [(ngModel)]="this.screen.name" type="text" 
+              no-padding no-margin clearInput></ion-input>
+            <!-- </div>
+            <div item-end> -->
+          </ion-item>
+      
+        </ion-col>
+        
+        <ion-col col-2 align-self-end>
+          <!-- <ion-buttons item-end color="primary"> -->
+            <button ion-button outline (click)="done()">
+              Done
+            </button>
+          <!-- </ion-buttons> -->
+        <!-- </div> -->
+
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+<ion-content no-padding>
+  <!-- <p>var-matrix-page</p> -->
+  <ion-scroll scrollX="true" scrollY="true" no-padding no-margin>
+    <!-- <div class="inputWrapper"> -->
+    <div class="inputRow" *ngFor="let i of indexesX">
+      <span class="inputCol" *ngFor="let j of indexesY">
+        <div class="inputWrapper">
+          <!-- <ion-input></ion-input> -->
+          <ion-input [(ngModel)]="this.screen.data[i][j]"></ion-input>
+          <!-- <p>{{j}}</p> -->
+        </div>
+      </span>
+    </div>
+    <!-- </div> -->
+  </ion-scroll>
+</ion-content>

@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
-import { MatrixPage } from './matrix';
+import { VarMatrixPage } from './var-matrix';
 
 @NgModule({
   declarations: [
-    MatrixPage,
+    VarMatrixPage,
   ],
   imports: [
-    IonicPageModule.forChild(MatrixPage),
+    IonicPageModule.forChild(VarMatrixPage),
   ],
 })
-export class MatrixPageModule {}
+export class VarMatrixPageModule {}

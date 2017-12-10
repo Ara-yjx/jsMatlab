@@ -6,7 +6,8 @@ import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
 
 import { ConsolePage } from '../pages/console/console';
 import { VariablesPage } from '../pages/variables/variables';
-import { MatrixPage } from '../pages/matrix/matrix';
+import { VariablesManagementProvider} from '../providers/variables-management/variables-management';
+// import { VarMatrixPage } from '../pages/var-matrix/var-matrix';
 import { Storage } from '@ionic/storage';
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -27,7 +28,8 @@ export class MyApp {
     public platform: Platform,
     public menu: MenuController,
     public statusBar: StatusBar,
-    public splashScreen: SplashScreen
+    public splashScreen: SplashScreen,
+    public varManage: VariablesManagementProvider,
   ) {
     this.initializeApp();
 
@@ -53,5 +55,12 @@ export class MyApp {
     this.menu.close();
     // navigate to the new page if it is not the current page
     this.nav.setRoot(page.component);
+
+    this.varManage.testSet();
   }
+
+
+
+
+
 }

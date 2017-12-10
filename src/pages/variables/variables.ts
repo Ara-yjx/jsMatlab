@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-// import { MatrixPage } from '../matrix/matrix';
+import { VarMatrixPage } from '../var-matrix/var-matrix';
 // import { PetryMatrix } from '../../assets/js/petrymatrix';
+import { VariablesManagementProvider} from '../../providers/variables-management/variables-management';
 import math = require('mathjs');
 
 /**
@@ -15,22 +16,31 @@ import math = require('mathjs');
 @Component({
   selector: 'page-variables',
   templateUrl: 'variables.html',
+  // entryComponents: [
+  //   VarMatrixPage
+  // ]
 })
 export class VariablesPage {
+  pushPage: any;
 
   constructor(
     public navCtrl: NavController, 
-    public navParams: NavParams
+    public navParams: NavParams,
+    public varManage: VariablesManagementProvider,
   ) {
-    // this.pm = PetryMatrix;
+    // var varMatrixPage = VarMatrixPage;
+    // var pushPage = VarMatrixPage;
   }
 
 
 
   ionViewDidLoad() {
-    
-    // this.pm.testlog();
-    
-
+    this.varManage.addMatrix("ww",[1,2]);
   }
+
+  clickCreateMatrix() {
+    this.varManage.createMatrix();
+    this.navCtrl.push(VarMatrixPage,{name:"TESTMATRIX"});
+  }
+
 }
